@@ -1,42 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #edf6ff;
+  background-color: #030712;
+  line-height: 1.6;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --color-bg: #030712;
+  --color-surface: rgba(8, 17, 35, 0.8);
+  --color-surface-border: rgba(89, 140, 255, 0.35);
+  --color-primary: #7ef9c7;
+  --color-primary-strong: #33f3ff;
+  --color-secondary: #9e82ff;
+  --color-muted: #8ea2c6;
+  --color-danger: #ff6b6b;
+  --shadow-strong: 0 25px 65px rgba(3, 7, 18, 0.8);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  color: var(--color-text, #edf6ff);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(51, 243, 255, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 75% 0%, rgba(158, 130, 255, 0.25) 0%, transparent 55%),
+    radial-gradient(circle at 50% 80%, rgba(126, 249, 199, 0.12) 0%, transparent 50%),
+    linear-gradient(135deg, #020409 0%, #050e20 50%, #02101b 100%);
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: min(1200px, 100%);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  color: var(--color-primary-strong);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.glass-panel {
+  width: 100%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-border);
+  border-radius: 28px;
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-strong);
 }
 
-.card {
-  padding: 2em;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.read-the-docs {
-  color: #888;
+.btn--primary {
+  background: linear-gradient(120deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  color: #020409;
+  box-shadow: 0 12px 24px rgba(126, 249, 199, 0.25);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 30px rgba(126, 249, 199, 0.2);
+}
+
+::selection {
+  background: rgba(51, 243, 255, 0.35);
+  color: #020409;
 }
