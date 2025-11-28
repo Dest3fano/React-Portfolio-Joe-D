@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Joe Destefano',
-  role: 'Full-Stack Developer',
+  role: 'Full Stack Developer',
   tagline: 'Building Premium Web Experiences',
   bio: 'Crafting scalable, high-performance applications with modern technologies. Passionate about clean code, exceptional UX, and shipping products that matter.',
   location: 'Philadelphia, PA',
