@@ -11,7 +11,6 @@ export const contactData = {
   social: [
     { name: 'GitHub', url: 'https://github.com', icon: 'FaGithub' },
     { name: 'LinkedIn', url: 'https://linkedin.com', icon: 'FaLinkedin' },
-    { name: 'Twitter', url: 'https://twitter.com', icon: 'FaTwitter' },
     { name: 'Email', url: 'mailto:destefanojoe@gmail.com', icon: 'FaEnvelope' }
   ]
 };
