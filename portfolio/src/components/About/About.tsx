@@ -18,15 +18,10 @@ const About = () => {
 
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
-        <div className="mb-16 text-center animate-fadeIn">
-          
-          <h2 className="mb-4 text-4xl font-bold text-[#edf6ff] sm:text-5xl lg:text-6xl">
+        <div className="mb-12 text-center animate-fadeIn">
+          <h2 className="text-4xl font-bold text-[#edf6ff] sm:text-5xl lg:text-6xl">
             {aboutData.title}
           </h2>
-          
-          <p className="mx-auto max-w-2xl text-lg text-[#8ea2c6] sm:text-xl">
-            {aboutData.description}
-          </p>
         </div>
 
         {/* Stats grid */}

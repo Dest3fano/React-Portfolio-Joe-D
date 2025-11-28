@@ -29,14 +29,11 @@ const Hero = () => {
             <p className="text-2xl font-semibold text-[#33f3ff] sm:text-3xl md:text-4xl lg:text-5xl animate-slideUp" style={{ animationDelay: '0.1s' }}>
               {profile.role}
             </p>
-            <p className="text-xl text-[#edf6ff]/90 sm:text-2xl md:text-3xl animate-slideUp" style={{ animationDelay: '0.2s' }}>
-              {profile.tagline}
-            </p>
           </div>
 
           {/* Bio */}
-          <p className="max-w-2xl text-base leading-relaxed text-[#8ea2c6] sm:text-lg md:text-xl animate-slideUp" style={{ animationDelay: '0.3s' }}>
-            {profile.bio}
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed animate-slideUp" style={{ animationDelay: '0.3s' }}>
+            I combine sharp design, clean code, and smart strategy to build lightning fast websites that get noticed, generate leads, and grow your brand.
           </p>
 
           {/* CTA Buttons */}
