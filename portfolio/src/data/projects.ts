@@ -1,38 +1,44 @@
+import CFO from '../img/CFO.png'
+
 export interface Project {
   id: number;
   title: string;
   description: string;
   longDescription: string;
   image: string;
-  tech: string[];
+  technologies: string[];
   liveUrl?: string;
-  githubUrl?: string;
+  githubUrl?: string | null;
+  githubNote?: string;
   caseStudyUrl?: string;
+  caseStudyId?: string;
   featured: boolean;
-  category: 'web' | 'mobile' | 'fullstack' | 'tool';
+  startupBadge?: boolean;
+  categories: string[];
 }
 
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management',
-    longDescription: 'Built a complete e-commerce platform with payment integration, admin dashboard, and real-time inventory tracking. Implemented secure authentication and optimized for performance.',
-    image: '/projects/ecommerce.jpg',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com',
-    caseStudyUrl: '/case-studies/ecommerce-platform',
+    title: 'CFO Agenda Intelligence Platform',
+    description: 'AI powered agenda builder helping finance leaders plan investor ready meetings with real time insights.',
+    longDescription:
+      'Designed and developed a confidential AI assistant for CFO teams that consolidates financial data, surfaces investor-ready talking points, and streamlines meeting prep workflows. Integrated secure authentication, dynamic agenda templates, and OpenAI-powered summarization tuned for finance compliance.',
+    image: CFO,
+    technologies: ['React', 'OpenAI API', 'Tailwind CSS', 'Node.js'],
+    liveUrl: 'https://offical-cfo-t0uz.onrender.com/',
+    githubUrl: null,
+    githubNote: 'GitHub repository available upon request due to client confidentiality and sensitive financial data',
+    caseStudyUrl: 'https://example.com/case-study/ai-financial',
+    caseStudyId: 'cfo-agenda-tool',
     featured: true,
-    category: 'fullstack'
+    startupBadge: true,
+    categories: ['Ai', 'FinTech'],
   },
-  
 ];
 
 export const categories = [
   { value: 'all', label: 'All Projects' },
-  { value: 'web', label: 'Web Apps' },
-  { value: 'mobile', label: 'Mobile' },
-  { value: 'fullstack', label: 'Full Stack' },
-  { value: 'tool', label: 'Tools' }
+  { value: 'Ai', label: 'AI' },
+  { value: 'FinTech', label: 'FinTech' },
 ];

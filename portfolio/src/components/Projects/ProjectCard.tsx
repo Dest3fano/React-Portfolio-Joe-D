@@ -7,7 +7,15 @@ interface ProjectCardProps {
   index: number;
 }
 
+const categoryEmojiMap: Record<string, string> = {
+  Ai: '🤖',
+  FinTech: '💹',
+};
+
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
+  const primaryCategory = project.categories[0];
+  const categoryEmoji = primaryCategory ? (categoryEmojiMap[primaryCategory] ?? '🚀') : '🚀';
+
   return (
     <article
       className="group relative overflow-hidden rounded-3xl border border-[rgba(255,255,255,0.1)] bg-gradient-to-br from-[#050b16]/90 via-[#0b182c]/80 to-[#050b16]/90 backdrop-blur-sm transition-all duration-500 hover:border-[#33f3ff]/40 hover:shadow-[0_30px_70px_rgba(51,243,255,0.15)] animate-slideUp"
@@ -16,29 +24,27 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#7ef9c7]/5 via-[#33f3ff]/5 to-[#9e82ff]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
       
-      {/* Featured badge */}
-      {project.featured && (
-        <div className="absolute right-4 top-4 z-20 rounded-full border border-[#7ef9c7]/30 bg-gradient-to-r from-[#7ef9c7]/20 to-[#33f3ff]/20 px-4 py-1.5 backdrop-blur-md">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#7ef9c7]">Featured</span>
-        </div>
-      )}
+      {/* Badge area */}
+      <div className="absolute right-4 top-4 z-20">
+        {project.startupBadge && (
+          <div className="rounded-full border border-[#9e82ff]/30 bg-gradient-to-r from-[#9e82ff]/20 to-[#33f3ff]/20 px-4 py-1.5 backdrop-blur-md">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#9e82ff]">Startup</span>
+          </div>
+        )}
+      </div>
 
       {/* Image container */}
       <div className="relative h-56 overflow-hidden bg-gradient-to-br from-[#0b182c] to-[#050b16] sm:h-64">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-6xl opacity-20">
-            {project.category === 'web' && '🌐'}
-            {project.category === 'mobile' && '📱'}
-            {project.category === 'fullstack' && '⚡'}
-            {project.category === 'tool' && '🛠️'}
-          </div>
-        </div>
-        
-        {/* Gradient overlay */}
+        <img
+          src={project.image}
+          alt={project.title}
+          className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050b16] via-transparent to-transparent opacity-60" />
-        
-        {/* Hover effect */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#7ef9c7]/10 via-[#33f3ff]/10 to-[#9e82ff]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+        <div className="absolute left-4 top-4 rounded-full bg-[rgba(5,11,22,0.6)] px-4 py-1 text-sm font-semibold text-[#edf6ff]">
+          {categoryEmoji}
+        </div>
       </div>
 
       {/* Content */}
@@ -55,7 +61,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
         {/* Tech stack */}
         <div className="mb-6 flex min-h-[2.5rem] flex-wrap gap-2">
-          {project.tech.map((tech, idx) => (
+          {project.technologies.map((tech, idx) => (
             <TechBadge key={idx} tech={tech} index={idx} />
           ))}
         </div>
@@ -94,6 +100,11 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
               <FaGithub className="h-4 w-4 flex-shrink-0" />
               <span className="truncate">View Code</span>
             </a>
+          )}
+          {!project.githubUrl && project.githubNote && (
+            <div className="col-span-full rounded-lg border border-dashed border-[rgba(255,255,255,0.15)] px-4 py-3 text-xs text-[#8ea2c6]">
+              {project.githubNote}
+            </div>
           )}
         </div>
       </div>

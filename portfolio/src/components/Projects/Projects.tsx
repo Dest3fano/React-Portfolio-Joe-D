@@ -8,7 +8,7 @@ const Projects = () => {
 
   const filteredProjects = activeFilter === 'all'
     ? projects
-    : projects.filter(project => project.category === activeFilter);
+    : projects.filter(project => project.categories.includes(activeFilter));
 
   return (
     <section
