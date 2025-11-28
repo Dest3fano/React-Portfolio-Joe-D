@@ -24,14 +24,9 @@ const Projects = () => {
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
         <div className="mb-16 text-center animate-fadeIn">
-          <h2 className="mb-4 text-4xl font-bold text-[#edf6ff] sm:text-5xl lg:text-6xl">
+          <h2 className="text-4xl font-bold text-[#edf6ff] sm:text-5xl lg:text-6xl">
             Featured Projects
           </h2>
-
-          <p className="mx-auto max-w-2xl text-lg text-[#8ea2c6] sm:text-xl">
-            A collection of projects I've built, showcasing my skills in full-stack development,
-            UI/UX design, and problem-solving.
-          </p>
         </div>
 
         {/* Filter buttons */}

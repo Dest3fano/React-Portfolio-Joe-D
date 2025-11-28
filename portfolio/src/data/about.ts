@@ -1,6 +1,6 @@
 export const aboutData = {
   title: "About Me",
-  description: "Mid-level developer with a passion for building scalable web applications and solving complex problems.",
+
   
   story: [
     "I'm a full-stack developer who loves turning ideas into reality through clean, efficient code. With a strong foundation in modern web technologies, I specialize in building responsive, user-centric applications that scale.",
