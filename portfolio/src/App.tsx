@@ -1,24 +1,14 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <>
       <Navbar />
       
-      {/* Demo Sections */}
-      <main className="pt-20">
-        {/* Home Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center px-4">
-          <div className="text-center max-w-4xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-[#7ef9c7] via-[#33f3ff] to-[#9e82ff] bg-clip-text text-transparent">
-              Welcome Home
-            </h1>
-            <p className="text-xl text-[#8ea2c6] mb-8">
-              Scroll to see the floating navbar in action
-            </p>
-          </div>
-        </section>
+      <main>
+        <Hero />
 
         {/* About Section */}
         <section id="about" className="min-h-screen flex items-center justify-center px-4">
