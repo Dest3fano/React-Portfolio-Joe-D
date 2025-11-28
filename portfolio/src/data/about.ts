@@ -3,10 +3,13 @@ export const aboutData = {
 
   
   story: [
-    "I'm a full-stack developer who loves turning ideas into reality through clean, efficient code. With a strong foundation in modern web technologies, I specialize in building responsive, user-centric applications that scale.",
-    "My journey in development has taught me that great software isn't just about writing code—it's about understanding user needs, collaborating with teams, and continuously learning new technologies to stay ahead of the curve.",
-    "When I'm not coding, you'll find me exploring new frameworks, contributing to open-source projects, or mentoring junior developers. I believe in writing code that's not just functional, but maintainable and elegant."
+    "I’m a full stack developer specializing in building fast, high-performing websites that stand out, drive leads, and help businesses grow. With a strong foundation in React, TypeScript, and Node.js, I build responsive, user friendly applications that run smoothly and scale easily",
+    "As I continue growing in the field, I’ve learned that great software is about more than writing code. It requires understanding user needs, communicating clearly, collaborating well, and staying curious about new tools and technologies.",
+"Outside of coding, I enjoy exploring new frameworks, contributing to open-source projects, and helping other developers learn. I’m passionate about writing code that is not only functional but also maintainable, and built to last."
   ],
+
+
+  
 
   stats: [
     { label: "Years Experience", value: "2+", icon: "FaCalendar" },
