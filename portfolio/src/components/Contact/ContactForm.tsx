@@ -95,7 +95,7 @@ const ContactForm = () => {
       {/* Submit button */}
       <button
         type="submit"
-        className="group inline-flex w-full items-center justify-center gap-3 rounded-lg border border-[rgba(255,255,255,0.25)] bg-gradient-to-r from-[#050b16]/80 via-[#0b182c]/70 to-[#050b16]/80 px-6 py-4 text-base font-semibold text-[#edf6ff] backdrop-blur-sm transition-all duration-300 hover:border-[#7ef9c7]/50 hover:text-[#7ef9c7] hover:shadow-[0_10px_40px_rgba(51,243,255,0.2)]"
+        className="group inline-flex w-full items-center justify-center gap-3 rounded-lg border border-[rgba(255,255,255,0.25)] bg-gradient-to-r from-[#050b16]/80 via-[#0b182c]/70 to-[#050b16]/80 px-6 py-4 text-base font-semibold text-[#edf6ff] backdrop-blur-sm transition-all duration-300 hover:border-[#7ef9c7]/50 hover:text-[#7ef9c7] hover:shadow-[0_10px_40px_rgba(51,243,255,0.2)] cursor-pointer"
       >
         <span>Send Message</span>
         <FaPaperPlane className="h-4 w-4 transition-transform group-hover:translate-x-1" />

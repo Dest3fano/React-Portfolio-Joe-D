@@ -22,7 +22,7 @@ const StatCard = ({ label, value, icon, index }: StatCardProps) => {
       {/* Gradient overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#7ef9c7]/5 via-[#33f3ff]/5 to-[#9e82ff]/5 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       
-      <div className="relative z-10 flex flex-col items-center text-center">
+      <div className="relative z-10 flex min-h-[170px] flex-col items-center justify-center gap-3 text-center">
         {/* Icon */}
         <div className="mb-4 rounded-full bg-gradient-to-br from-[#7ef9c7]/20 to-[#33f3ff]/20 p-3 transition-transform duration-300 group-hover:scale-110">
           <IconComponent className="h-6 w-6 text-[#33f3ff]" />

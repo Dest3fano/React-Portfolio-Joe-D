@@ -37,7 +37,7 @@ const Projects = () => {
                 key={category.value}
                 onClick={() => setActiveFilter(category.value)}
                 className={`
-                  relative overflow-hidden rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300
+                  relative overflow-hidden rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-300 cursor-pointer
                   ${activeFilter === category.value
                     ? 'border border-[#33f3ff]/50 bg-gradient-to-r from-[#7ef9c7]/20 via-[#33f3ff]/20 to-[#9e82ff]/20 text-[#edf6ff] shadow-[0_10px_30px_rgba(51,243,255,0.2)]'
                     : 'border border-[rgba(255,255,255,0.1)] bg-gradient-to-r from-[#050b16]/80 to-[#0b182c]/60 text-[#8ea2c6] hover:border-[#33f3ff]/30 hover:text-[#edf6ff]'
