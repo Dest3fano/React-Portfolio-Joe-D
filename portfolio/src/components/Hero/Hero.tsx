@@ -7,12 +7,6 @@ import TechStack from './TechStack';
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen overflow-hidden px-4 pt-36 pb-20 sm:px-6 lg:px-8 lg:pt-44">
-      {/* Animated background effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/4 top-20 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-[#7ef9c7]/20 via-[#33f3ff]/15 to-transparent blur-[120px] animate-float" />
-        <div className="absolute right-1/4 top-40 h-[400px] w-[400px] rounded-full bg-gradient-to-l from-[#9e82ff]/20 via-[#33f3ff]/10 to-transparent blur-[100px] animate-float-delayed" />
-        <div className="absolute bottom-20 left-1/2 h-[350px] w-[350px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#7ef9c7]/15 to-transparent blur-[90px]" />
-      </div>
 
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
         {/* Left column - Content */}

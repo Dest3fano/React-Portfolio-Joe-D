@@ -15,11 +15,6 @@ const Projects = () => {
       id="projects"
       className="relative -mt-12 overflow-hidden px-4 pt-16 pb-24 sm:-mt-16 sm:px-6 sm:pt-20 sm:pb-24 lg:-mt-20 lg:px-8 lg:pt-24 lg:pb-32"
     >
-      {/* Background effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/4 top-40 h-[600px] w-[600px] rounded-full bg-gradient-to-r from-[#7ef9c7]/10 via-[#33f3ff]/8 to-transparent blur-[120px]" />
-        <div className="absolute right-1/3 bottom-20 h-[500px] w-[500px] rounded-full bg-gradient-to-l from-[#9e82ff]/12 to-transparent blur-[100px] animate-pulse-slow" />
-      </div>
 
       <div className="mx-auto max-w-7xl">
         {/* Section header */}

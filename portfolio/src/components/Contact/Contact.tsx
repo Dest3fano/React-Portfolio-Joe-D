@@ -5,11 +5,6 @@ import ContactInfo from './ContactInfo';
 const Contact = () => {
   return (
     <section id="contact" className="relative overflow-hidden px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
-      {/* Background effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute right-1/3 top-20 h-[600px] w-[600px] rounded-full bg-gradient-to-l from-[#7ef9c7]/12 via-[#33f3ff]/8 to-transparent blur-[120px] animate-pulse-slow" />
-        <div className="absolute left-1/4 bottom-40 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-[#9e82ff]/10 to-transparent blur-[100px]" />
-      </div>
 
       <div className="mx-auto max-w-7xl">
         {/* Section header */}

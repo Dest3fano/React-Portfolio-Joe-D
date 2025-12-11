@@ -10,11 +10,6 @@ const About = () => {
 
   return (
     <section id="about" className="relative overflow-hidden px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
-      {/* Background effects */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute right-1/4 top-20 h-[600px] w-[600px] rounded-full bg-gradient-to-l from-[#9e82ff]/15 via-[#33f3ff]/10 to-transparent blur-[120px] animate-pulse-slow" />
-        <div className="absolute left-1/3 bottom-40 h-[500px] w-[500px] rounded-full bg-gradient-to-r from-[#7ef9c7]/10 to-transparent blur-[100px]" />
-      </div>
 
       <div className="mx-auto max-w-7xl">
         {/* Section header */}
