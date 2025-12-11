@@ -33,12 +33,12 @@ export const projects: Project[] = [
     caseStudyId: 'cfo-agenda-tool',
     featured: true,
     startupBadge: true,
-    categories: ['Ai', 'FinTech'],
+    categories: ['FullStack', 'Frontend'],
   },
 ];
 
 export const categories = [
   { value: 'all', label: 'All Projects' },
-  { value: 'Ai', label: 'AI' },
-  { value: 'FinTech', label: 'FinTech' },
+  { value: 'FullStack', label: 'Full Stack' },
+  { value: 'Frontend', label: 'Frontend' },
 ];
