@@ -2,6 +2,9 @@ import { ArrowRight, Download } from 'lucide-react';
 import { profile } from '../../data/profile';
 import HeroImage from './HeroImage';
 import TechStack from './TechStack';
+import Joe from '../../img/Joe.png';
+import JoeResume from '../../img/Joe_resume.pdf';
+
 
 
 const Hero = () => {
@@ -42,7 +45,7 @@ const Hero = () => {
               </span>
             </a>
             <a
-              href="/resume.pdf"
+              href={JoeResume}
               download
               className="group relative inline-flex items-center gap-3 rounded-full border border-[rgba(255,255,255,0.25)] bg-gradient-to-r from-[#050b16] via-[#0b182c] to-[#050b16] px-8 py-3 text-base font-semibold text-[#edf6ff] transition-all duration-300 hover:border-[#9e82ff] hover:shadow-[0_20px_45px_rgba(9,14,24,0.6)]"
             >
@@ -60,7 +63,7 @@ const Hero = () => {
 
         {/* Right column - Image */}
         <div className="relative lg:ml-auto">
-          <HeroImage imageUrl={profile.imageUrl} name={profile.name} />
+          <HeroImage imageUrl={Joe} name={profile.name} />
         </div>
       </div>
     </section>

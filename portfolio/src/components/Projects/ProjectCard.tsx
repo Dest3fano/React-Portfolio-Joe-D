@@ -8,8 +8,8 @@ interface ProjectCardProps {
 }
 
 const categoryEmojiMap: Record<string, string> = {
-  Ai: '🤖',
-  FinTech: '💹',
+  FullStack: '🧠',
+  Frontend: '🎨',
 };
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
