@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16">
         {/* Left column - Content */}
-        <div className="space-y-8">
+        <div className="space-y-8 order-2 lg:order-1">
 
           {/* Main heading */}
           <div className="space-y-6">
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
 
         {/* Right column - Image */}
-        <div className="relative lg:ml-auto">
+        <div className="relative lg:ml-auto order-1 lg:order-2">
           <HeroImage imageUrl={Joe} name={profile.name} />
         </div>
       </div>
